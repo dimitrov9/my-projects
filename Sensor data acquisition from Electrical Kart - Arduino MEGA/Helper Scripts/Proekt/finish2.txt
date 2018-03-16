@@ -1,0 +1,45 @@
+ #define wheel_quart 0.03
+ volatile int cnt = 0;
+ unsigned long rpm, speed_val = 0;
+ unsigned long timeold, temp = 0;
+ void magnet_detect()
+ {
+   temp=millis()-timeold;
+   cnt++;
+   timeold = millis();
+ }
+ void calculate_speed(){
+    noInterrupts();
+    if (cnt > 0) { 
+        Serial.println(temp);
+        rpm = 60000/temp; //15000/temp za 4 magneti
+       // speed_val = wheel_quart
+        Serial.print(cnt);
+        Serial.print(" ");
+        Serial.println(rpm);
+        rpm = 0;
+        cnt = 0;
+    }
+    else{
+      rpm = 0;
+      speed_val = 0;
+      Serial.print("RPM = ");
+      Serial.println(rpm);
+      Serial.print("Speed = ");
+      Serial.println(speed_val);
+    }
+    interrupts();
+
+  
+ }
+ void setup()
+ {
+   Serial.begin(9600);
+   pinMode(2,INPUT);
+   attachInterrupt(digitalPinToInterrupt(2), magnet_detect, RISING);//Initialize the intterrupt pin (Arduino digital pin 2)
+ }
+ void loop()//Measure RPM
+ {
+  calculate_speed();
+  delay(3000);
+}

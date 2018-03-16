@@ -1,0 +1,9 @@
+Virtuino library version 1.68
+
+Library 1.68
+Bug fixed: Error on bluetooth library; Error response if value = 2
+
+Library 1.67
+Bug fixed: Supports any range of pwm pins
+
+ 

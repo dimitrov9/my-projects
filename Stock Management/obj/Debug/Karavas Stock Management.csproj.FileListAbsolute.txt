@@ -1,0 +1,45 @@
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\Karavas Stock Management.exe.config
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\Karavas Stock Management.exe.manifest
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\Karavas Stock Management.application
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\Karavas Stock Management.exe
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\Karavas Stock Management.pdb
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\EntityFramework.dll
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\System.Data.SQLite.dll
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\EntityFramework.xml
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\System.Data.SQLite.xml
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\Karavas_Stock_Management.AddElement.resources
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\Karavas_Stock_Management.AddObject.resources
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\Karavas_Stock_Management.AddState.resources
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\Karavas_Stock_Management.DimensionsPanel.resources
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\Karavas_Stock_Management.Form1.resources
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\Karavas_Stock_Management.GenerateReport.resources
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\Karavas_Stock_Management.LoginForm.resources
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\Karavas_Stock_Management.NumericLeftRight.resources
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\Karavas_Stock_Management.ObjectDedicatedButton.resources
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\Karavas_Stock_Management.OneDimensionPanel.resources
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\Karavas_Stock_Management.Properties.Resources.resources
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\Karavas_Stock_Management.waitForm.resources
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\Karavas Stock Management.csproj.GenerateResource.Cache
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\RdlCompile.cache
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\RdlCompile.compiled
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\Karavas Stock Management.exe.manifest
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\Karavas Stock Management.application
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\Karavas Stock Management.exe
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\Karavas Stock Management.pdb
+C:\Users\dimit\Documents\Visual Studio 2015\Projects\Karavas Stock Management\Karavas Stock Management\obj\Debug\Karavas Stock Management.csprojResolveAssemblyReference.cache

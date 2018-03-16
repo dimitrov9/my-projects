@@ -1,0 +1,121 @@
+#include <OneWire.h>
+#include <DallasTemperature.h>
+#include <TinyGPS++.h>
+
+#define trigPin1 9         
+#define echoPin1 10                            
+#define trigPin2 12
+#define echoPin2 13
+
+float duration, distance, UltraSensor1, UltraSensor2, t1, t2, vout, vin = 0.0;
+float R1 = 30000.0; 
+float R2 = 7500.0; 
+int analogInput = A1;
+int val = 0;
+int temp_sensor1 = 5; //- pinovi na koi sa povrzani
+int temp_sensor2 = 6;
+TinyGPSPlus gps;
+OneWire oneWirePin1(temp_sensor1);
+OneWire oneWirePin2(temp_sensor2);
+DallasTemperature sensor1(&oneWirePin1);
+DallasTemperature sensor2(&oneWirePin2);
+
+void get_temp(){
+sensor1.requestTemperatures();  // Send the command to get temperatures
+sensor2.requestTemperatures();
+t1 = sensor1.getTempCByIndex(0); // Why "byIndex"? You can have more than one IC on the same bus. 0 refers to the first IC on the wire
+t2 = sensor2.getTempCByIndex(0); 
+}
+
+void SonarSensor(int trigPinSensor,int echoPinSensor)//it takes the trigPIN and the echoPIN 
+{
+digitalWrite(trigPinSensor, LOW);// put trigpin LOW 
+delayMicroseconds(2);// wait 2 microseconds
+digitalWrite(trigPinSensor, HIGH);// switch trigpin HIGH
+delayMicroseconds(10); // wait 10 microseconds
+digitalWrite(trigPinSensor, LOW);// turn it LOW again
+duration = pulseIn(echoPinSensor, HIGH);//pulseIn funtion will return the time on how much the configured pin remain the level HIGH or LOW; in this case it will return how much time echoPinSensor stay HIGH
+distance = (duration/2) * 0.0343; // first we have to divide the duration by two  
+}
+
+void get_gps(){
+  while(Serial1.available())//While there are characters to come from the GPS
+  {
+    gps.encode(Serial1.read());//This feeds the serial NMEA data into the library one char at a time
+  }
+  if(gps.location.isUpdated())//This will pretty much be fired all the time anyway but will at least reduce it to only after a package of NMEA data comes in
+  {
+    //Get the latest info from the gps object which it derived from the data sent by the GPS unit
+    Serial.println("Satellite Count:");
+    Serial.println(gps.satellites.value());
+    Serial.println("Latitude:");
+    Serial.println(gps.location.lat(), 6);
+    Serial.println("Longitude:");
+    Serial.println(gps.location.lng(), 6);
+    Serial.println("Speed KMH:");
+    Serial.println(gps.speed.kmph());
+    Serial.println("Altitude meters:");
+    Serial.println(gps.altitude.meters());
+    Serial.println("Time:");
+    Serial.print(gps.time.hour() + 2);
+    Serial.print(":");
+    Serial.print(gps.time.minute());
+    Serial.print(":");
+    Serial.println(gps.time.second());
+    Serial.println("Date:");
+    Serial.print(gps.date.day());
+    Serial.print(".");
+    Serial.print(gps.date.month());
+    Serial.print(".");
+    Serial.print(gps.date.year());
+    Serial.println("");
+  }
+}
+void get_volt(){
+   val = analogRead(analogInput);
+   vout = (val * 5.0) / 1024.0;
+   vin = vout / (R2/(R1+R2));
+}
+
+void setup(void){
+    Serial.begin(9600);
+    Serial1.begin(9600);
+    sensor1.begin();
+    sensor2.begin();
+    pinMode(analogInput, INPUT);
+    pinMode(trigPin1, OUTPUT);                   
+    pinMode(echoPin1, INPUT);                     
+    pinMode(trigPin2, OUTPUT);
+    pinMode(echoPin2, INPUT);
+    }
+void loop(void){ 
+    SonarSensor(trigPin1, echoPin1);           
+    UltraSensor1 = distance;                   
+    SonarSensor(trigPin2,echoPin2);            
+    UltraSensor2 = distance;  
+    delay(1000);
+    get_gps();
+    Serial.print("Temperature on Sensor 1 is: ");
+    Serial.print(t1,2);
+    Serial.print("Temperature on Sensor 2 is: ");
+    Serial.print(t2,2);
+    Serial.print("distance measured by the first sensor: ");
+    if (UltraSensor1 >= 400 || UltraSensor1 <= 2){
+      Serial.println("Out of range");
+    }
+    else {
+      Serial.print(UltraSensor1);
+      Serial.println(" cm");
+    }
+    Serial.print("distance measured by the second sensor: ");
+    if (UltraSensor2 >= 400 || UltraSensor2 <= 2){
+      Serial.println("Out of range");
+     }
+    else {
+      Serial.print(UltraSensor2);
+      Serial.println(" cm");
+     }
+     Serial.print("INPUT V= ");
+     Serial.println(vin,2);
+}
+

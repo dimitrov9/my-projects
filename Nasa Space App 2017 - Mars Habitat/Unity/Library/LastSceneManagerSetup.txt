@@ -1,0 +1,4 @@
+sceneSetups:
+- path: F:/Back Up/25-04-2017/Documents/Unity projects/Jump Around/Assets/_Scenes/Game.unity
+  isLoaded: 1
+  isActive: 1

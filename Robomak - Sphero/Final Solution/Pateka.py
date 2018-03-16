@@ -1,0 +1,4 @@
+
+
+def pateka(matrix, initial):
+
